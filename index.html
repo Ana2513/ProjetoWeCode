@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      $(document).ready(function () {
+        $('.slider_main').bxSlider({ controls: false })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.slider_prod').bxSlider({ controls: false, slideWidth: 269 })
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.slider_card').bxSlider({ controls: false })
+      })
+    </script>
+
+    <title>WeCode</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-container">
+        <div class="nav_menu">
+          <object data="images/icon-header-menu.svg" height="15"></object>
+        </div>
+        <div class="nav_logo">
+          <object
+            data="images/logo-header-wecode.svg"
+            width="117"
+            height="26"
+          ></object>
+        </div>
+        <div class="nav_search">
+          <span class="nav_search_open">o</span>
+          <object data="images/icon-header-search.svg" height="20"></object>
+        </div>
+        <div class="nav_carrinho">
+          <object data="images/icon-header-carrinho.svg" height="25"></object>
+        </div>
+      </div>
+      <div class="nav_pesquisa search_collapse" id="nav_pesquisa">
+        <input type="text" />
+        <span class="nav_search_close">x</span>
+      </div>
+    </nav>
+
+    <div class="sidemenu_wrapper hover_collapse">
+      <div class="sidebar">
+        <div class="sidebar_inner">
+          <ul>
+            <li class="close">
+              <a href="#">
+                <span class="text">x</span>
+              </a>
+            </li>
+            <li class="usu">
+              <a href="#">
+                <span class="text">Usuário</span>
+              </a>
+            </li>
+
+            <li class="dep1">
+              <a href="#">
+                <span class="text">Departamento 1</span>
+              </a>
+            </li>
+            <li class="dep2">
+              <a href="#">
+                <span class="text">Departamento 2</span>
+              </a>
+            </li>
+            <li class="dep3">
+              <a href="#">
+                <span class="text">Departamento 3</span>
+              </a>
+            </li>
+            <li class="dep4">
+              <a href="#">
+                <span class="text">Departamento 4</span>
+              </a>
+            </li>
+            <li class="dep5">
+              <a href="#">
+                <span class="text">Departamento 5</span>
+              </a>
+            </li>
+            <li class="dep6">
+              <a href="#">
+                <span class="text">Departamento 6</span>
+              </a>
+            </li>
+            <li class="sair">
+              <a href="#">
+                <span class="text">Sair</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main_banner">
+        <div class="slider_main">
+          <div><img src="images/Banner-home-principal-1.png" /></div>
+          <div><img src="images/Banner-home-principal-2.png" /></div>
+          <div><img src="images/Banner-home-principal-3.png" /></div>
+        </div>
+      </div>
+      <div class="main_dept">
+        <div
+          class="main_dept_Img"
+          style="background-image: url('images/Banner-home-departamento-1.png')"
+        >
+          Departamento 1
+        </div>
+        <div
+          class="main_dept_Img"
+          style="background-image: url('images/Banner-home-departamento-2.png')"
+        >
+          Departamento 2
+        </div>
+        <div
+          class="main_dept_Img"
+          style="background-image: url('images/Banner-home-departamento-3.png')"
+        >
+          Departamento 3
+        </div>
+        <div
+          class="main_dept_Img"
+          style="background-image: url('images/Banner-home-departamento-4.png')"
+        >
+          Departamento 4
+        </div>
+        <div
+          class="main_dept_Img"
+          style="background-image: url('images/Banner-home-departamento-5.png')"
+        >
+          Departamento 5
+        </div>
+        <div
+          class="main_dept_Img"
+          style="background-image: url('images/Banner-home-departamento-6.png')"
+        >
+          Departamento 6
+        </div>
+      </div>
+
+      <div class="main_prodMais">
+        <h2>Produtos mais vendidos</h2>
+        <div class="slider_prod">
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-1.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">Copo de Mocaccino Médio - 550ml</div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 12</div>
+                <div class="prod_item_precN">R$ 9,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div class="prod_item_lanc">Lançamento</div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-2.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">Copo de Mocaccino Grande - 750ml</div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 16</div>
+                <div class="prod_item_precN">R$ 12,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div
+                class="prod_item_lanc"
+                style="background-color: transparent"
+              ></div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-3.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">
+                Copo de Mocaccino Pequeno - 350ml
+              </div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 9</div>
+                <div class="prod_item_precN">R$ 7,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div
+                class="prod_item_lanc"
+                style="background-color: transparent"
+              ></div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="main_banners"
+        style="background-image: url('images/banner-home-corpo-2.png')"
+      >
+        <span>Aproveite agora!</span>
+      </div>
+
+      <div class="main_prodSel">
+        <h2>Selecionado por nós</h2>
+        <div class="slider_prod">
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-1.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">Copo de Mocaccino Médio - 550ml</div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 12</div>
+                <div class="prod_item_precN">R$ 9,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div class="prod_item_lanc">Lançamento</div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-2.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">Copo de Mocaccino Grande - 750ml</div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 16</div>
+                <div class="prod_item_precN">R$ 12,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div
+                class="prod_item_lanc"
+                style="background-color: transparent"
+              ></div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-3.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">
+                Copo de Mocaccino Pequeno - 350ml
+              </div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 9</div>
+                <div class="prod_item_precN">R$ 7,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div
+                class="prod_item_lanc"
+                style="background-color: transparent"
+              ></div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="main_banners"
+        style="background-image: url('images/banner-home-corpo-1.png')"
+      >
+        <span>Saiba mais!</span>
+      </div>
+
+      <div class="main_prodExc">
+        <h2>Exclusivos da loja online</h2>
+        <div class="slider_prod">
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-1.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">Copo de Mocaccino Médio - 550ml</div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 12</div>
+                <div class="prod_item_precN">R$ 9,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div class="prod_item_lanc">Lançamento</div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-2.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">Copo de Mocaccino Grande - 750ml</div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 16</div>
+                <div class="prod_item_precN">R$ 12,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div
+                class="prod_item_lanc"
+                style="background-color: transparent"
+              ></div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+          <div
+            class="prodItem"
+            style="
+              background-image: url('images/Imagem-home-produto-3.png');
+              background-repeat: no-repeat;
+            "
+          >
+            <div class="prod_item_sup">
+              <div class="prod_item_nome">
+                Copo de Mocaccino Pequeno - 350ml
+              </div>
+              <div class="prod_item_preco">
+                <div class="prod_item_precA">R$ 9</div>
+                <div class="prod_item_precN">R$ 7,50</div>
+              </div>
+            </div>
+            <div class="prod_item_inf">
+              <div
+                class="prod_item_lanc"
+                style="background-color: transparent"
+              ></div>
+              <div class="prod_item_car">
+                <object
+                  data="images/icon-home-carddeproduto-addtocart.svg"
+                  height="25"
+                ></object>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="foot_slider">
+        <div class="slider_card">
+          <div class="foot_card_flex">
+            <div class="foot_card_obj">
+              <object data="images/icon-footer-card.svg" height="25"></object>
+              <p>Até 12x sem juros</p>
+            </div>
+            <div class="foot_card_obj">
+              <object data="images/icon-footer-locker.svg" height="25"></object>
+              <p>Compra 100% segura</p>
+            </div>
+          </div>
+          <div class="foot_card_flex">
+            <div class="foot_card_obj">
+              <object data="images/icon-footer-box.svg" height="25"></object>
+              <p>Produtos de alta qualidade</p>
+            </div>
+            <div class="foot_card_obj">
+              <object data="images/icon-footer-pix.svg" height="25"></object>
+              <p>5% de desconto no PIX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="foot_inf">
+          <object data="images/icon-footer-logotype.svg" height="40"></object>
+          <h1>Newsletter</h1>
+          <span
+            >Receba nossas novidades e ofertas através da <br />
+            nossa newsletter</span
+          >
+          <div class="foot_input">
+            <input type="text" placeholder="Digite seu e-mail" />
+            <button>
+              <object data="images/icon-footer-mail.svg" height="15"></object>
+            </button>
+          </div>
+          <div class="foot_redes">
+            <h1>Siga nossas redes sociais</h1>
+            <object
+              data="images/icon-footer-instagram.svg"
+              height="24"
+            ></object>
+            <object data="images/icon-footer-twitter.svg" height="24"></object>
+            <object data="images/icon-footer-facebook.svg" height="24"></object>
+          </div>
+          <div class="foot_menu">
+            <div class="foot_menu_toggle foot_SN">
+              <h2 class="foot_menu_toggle_til">Sobre Nós</h2>
+              <h2 class="foot_menu_toggle_simb">+</h2>
+            </div>
+            <div class="foot_menu_toogle_cont foot_SN_cont foot_menu_collapse">
+              <h3>Quem somos nós</h3>
+              <h3>Nosso grupo</h3>
+            </div>
+            <div class="foot_menu_toggle foot_MC">
+              <h2 class="foot_menu_toggle_til">Minha Conta</h2>
+              <h2 class="foot_menu_toggle_simb">+</h2>
+            </div>
+            <div class="foot_menu_toogle_cont foot_MC_cont foot_menu_collapse">
+              <h3>Meu Perfil</h3>
+              <h3>Meus Pedidos</h3>
+            </div>
+            <div class="foot_menu_toggle foot_PL">
+              <h2 class="foot_menu_toggle_til">Políticas</h2>
+              <h2 class="foot_menu_toggle_simb">+</h2>
+            </div>
+            <div class="foot_menu_toogle_cont foot_PL_cont foot_menu_collapse">
+              <h3>Política de troca e devolução</h3>
+              <h3>Política de Privacidade</h3>
+              <h3>Termo de Uso</h3>
+            </div>
+            <div class="foot_menu_toggle foot_CT">
+              <h2 class="foot_menu_toggle_til">Contato</h2>
+              <h2 class="foot_menu_toggle_simb">+</h2>
+            </div>
+            <div class="foot_menu_toogle_cont foot_CT_cont foot_menu_collapse">
+              <h3>Tel.:(54)3028-9452</h3>
+              <h3>
+                Rua Plácido de Castro, 1063 - Sala 403 - <br />Exposição, Caxias
+                do Sul - RS, 95084-370
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="foot_cert">
+          <h2>Certificados & Selos</h2>
+          <object data="images/icon-footer-selo.svg" height="40"></object>
+        </div>
+        <div class="foot_copy">
+          <object data="images/icon-footer-logotype.svg" height="22"></object>
+          <span
+            >© 2021 wecode.digital - e-commerce technology. Todos os direitos
+            reservados. Rua Plácido de Castro, 1063 - Sala 403 - Exposição,
+            Caxias do Sul - RS, 95084-370 Telefone: (54) 3028-9452</span
+          >
+        </div>
+        <div class="foot_vtex">
+          <object
+            data="images/icon-footer-vtexbywecode.svg"
+            height="20"
+          ></object>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
